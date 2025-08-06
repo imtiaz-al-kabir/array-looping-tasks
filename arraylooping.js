@@ -85,6 +85,18 @@ Reverse the words of a sentence. Only the position of the word will be reversed.
 
 ---
 */
+const statement = "I am a hard    working    person";
+
+const revStr = statement.trim().split(/\s+/);
+console.log(revStr);
+const reverseStr = revStr.reverse().join(" ");
+console.log(reverseStr);
+
+// let revString = function (s) {
+//   let revStr = s.trim().split(/\s+/).reverse().join(" ");
+//   return revStr;
+// };
+// console.log(revString("I am a hard working person"));
 
 /*
 ### Task 5
