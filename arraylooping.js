@@ -114,6 +114,21 @@ Copy: [99, 2, 3]
 ----
 */
 
+const Original = [1, 2, 3];
+console.log(Original);
+
+const copy = Array.from(Original);
+copy[0] = 99;
+console.log(copy);
+
+const copy1 = [].concat(Original);
+copy1[0] = 99;
+console.log(copy1);
+
+const copy2 = [...Original];
+copy2[0] = 99;
+console.log(copy2);
+
 /*
 ### Task 6
 Given an array of student objects, print each student’s name and marks.
@@ -130,6 +145,13 @@ John scored 85
 Alice scored 90
 ```
 */
+
+const arr = [
+  { name: "John", marks: 85 },
+  { name: "Alice", marks: 90 },
+];
+console.log(arr[0].name + " scored " + arr[0].marks);
+console.log(arr[1].name + " scored " + arr[1].marks);
 
 /*
 ### Task 7
@@ -153,3 +175,11 @@ Expected Array:
 ]
 ```
 */
+
+const arr1 = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
+arr1[1][0] = 99;
+console.log(arr1);
