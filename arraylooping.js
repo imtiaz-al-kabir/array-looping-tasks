@@ -43,15 +43,11 @@ Write a JavaScript code to get the even numbers from an array using any looping 
 
 const numbers = [12, 98, 5, 41, 23, 78, 46];
 
-for (let i = 0; i < numbers.length; i++){
-
-  if( numbers[i]%2===0){
-console.log(numbers[i]);
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    console.log(numbers[i]);
   }
 }
-
-
-
 
 /*
 ### Task 3
@@ -67,6 +63,13 @@ Use a for...of loop to concatenate all the elements of an array into a single st
 
 ---
 */
+
+var nams = ["Tom", "Tim", "Tin", "Tik"];
+let result = "";
+for (let nam of nams) {
+  result = result.concat(nam);
+}
+console.log(result);
 
 /*
 ### Task 4 (Hard)
